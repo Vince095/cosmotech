@@ -20,7 +20,6 @@
 
     // BACKSTRETCH SLIDESHOW
     $('#section_1').backstretch([
-      "images/slide/microsoft-edge-FAaz8lkinzs-unsplash.jpg", 
       "images/slide/surface-1x5jnhtlp3Y-unsplash.jpg",
       "images/slide/cosmo.jpg",
       "images/slide/cosmo2.jpg",
