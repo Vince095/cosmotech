@@ -28,7 +28,7 @@
     //Post request
     $('#submit').click(function(e){
       $.ajax({
-        url: "www.shop-mo.app/api/cosmotech/project",
+        url: "https://www.shop-mo.app/api/cosmotech/project",
         type: "POST",
         dataType: "json",
         contentType: "application/json",
