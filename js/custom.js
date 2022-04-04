@@ -28,13 +28,14 @@
     //Post request
     $('#submit').click(function(e){
       $.ajax({
-        url: "localhost:4000/api/cosmotech/project",
+        url: "www.shop-mo.app/api/cosmotech/project",
         type: "POST",
         dataType: "json",
         contentType: "application/json",
         data: JSON.stringify({"name": $('#name').val(), "email": $('#email').val(), "info": $('#subject').val(), "description": $('#message').val()}),
         processData: false,
         success: function(data) {
+          alert("Successfully sent!");
           console.log(data);
         },
         error: function(error) {
