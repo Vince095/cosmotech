@@ -44,6 +44,25 @@
       })
       e.preventDefault();
     });
+
+    $('#subscribe').click(function(e){
+      $.ajax({
+          url: "https://www.shop-mo.app/api/cosmotech/project",
+          type: "POST",
+          dataType: "json",
+          contentType: "application/json",
+          data: JSON.stringify({"name": $('#subscribe-email').val()}),
+          processData: false,
+          success: function (data) {
+              alert("Subscribed to NewsLetter!");
+              console.log(data);
+          },
+          error: function (error) {
+              console.log(error);
+          }
+      })
+        e.preventDefault();
+    });
     
   })(window.jQuery);
 
