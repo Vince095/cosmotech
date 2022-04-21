@@ -47,7 +47,7 @@
 
     $('#subscribe').click(function(e){
       $.ajax({
-          url: "https://www.shop-mo.app/api/cosmotech/project",
+          url: "https://www.shop-mo.app/api/cosmotech/newsletter",
           type: "POST",
           dataType: "json",
           contentType: "application/json",
